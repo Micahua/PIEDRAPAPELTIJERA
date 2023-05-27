@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #110F26;
+    color: white;
+}
+
+.title {
+    width: 100%;
+    background: rgb(13, 192, 220);
+    color: #080808;
+    padding: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title h2 {
+    color: #080808;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.title img {
+    width: 100px !important;
+    height: 100%;
+    background-color: white;
+    padding: 15px;
+    border: 4px solid #333333;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.elegir img:active {
+    background-color: #626078;
+}
+
+.elegir img {
+    width: 100px !important;
+    height: 100%;
+    background-color: white;
+    padding: 15px;
+    border: 4px solid #333333;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.elegir {
+    margin: 10px;
+    display: flex;
+    /* or inline-flex */
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.elegir img:hover {
+    cursor: pointer;
+    background-color: #86849d;
+}
+
+.Marcador {
+    width: 200px;
+    border: 2px solid white;
+    text-align: center;
+    margin: 20px auto;
+    /*top and bottom 20 px and centre it*/
+    padding: 20px 20px;
+    font-size: 40px;
+    position: relative;
+    transition: 0.3s ease-in;
+}
+
+.Marcador:hover {
+    background-color: #323042;
+}
+
+.jugador {
+    background-color: #3aa330;
+    padding: 2px 20px;
+    font-size: 20px;
+}
+
+#etiquetaUsr {
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+#etiquetacomp {
+    position: absolute;
+    top: 20px;
+    right: -45px;
+}
+
+.result {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+
+#piedra {
+    margin: 4em 0 0 8em;
+}
+
+#papel {
+    margin: 4em 0 0 5em;
+}
+
+#tijera {
+    margin: 4em 0 0 4em;
+}
+
+#efecto {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 0.1s;
+}
+
+#efecto h1 {
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+    margin: 2em 0 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+#efecto h3 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+}
+
+/*Diseño para celular de 0 - 600px  */
+
+@media screen and (max-width: 600px) {
+
+    html {
+        height: auto;
+    }
+
+    body {
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .title {
+        width: 100%;
+        background: rgb(8, 149, 18);
+        color: #080808;
+        padding: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10pt;
+    }
+
+    .title h2 {
+        font-size: 20pt;
+        padding-top: 10%;
+    }
+
+    .title img {
+        display: none;
+    }
+
+    .elegir img {
+        width: 100px !important;
+        height: 100%;
+        background-color: white;
+        padding: 0px;
+        border-radius: 20px;
+    }
+
+    .mensajeresu {
+        font-size: 5pt;
+
+    }
+}

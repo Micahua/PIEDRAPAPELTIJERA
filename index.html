@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./scripts.js"></script>
+    <title>JUGUEMOS TODOS</title>
+
+    <!--estilos Mios-->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+
+<body>
+    <div class="title">
+        <h1> Piedra <img src="./assets/img/Piedra.jpg">, Papel <img src="./assets/img/papel.jpg">
+            ó Tijera <img src="./assets/img/tijera.jpg"> </h1>
+        <br>
+        <h2> TODOS CONTRA LA MAQUINA</h2>
+    </div>
+    <div class="Marcador">
+        <div id="etiquetaUsr" class="jugador">YO</div>
+        <div id="etiquetacomp" class="jugador">PC</div>
+        <span id="MisPuntos">0</span>:<span id="PCPuntos">0</span>
+    </div>
+    <div class="elegir">
+
+        <!-- <div   class="elegir" onclick="usuario('0');" id="piedra" >-->
+        <div onclick="usuario('0');" id="piedra" class="mensajeresu">
+            <img src="./assets/img/Piedra.jpg">
+        </div>
+        <!-- <div class="elegir" onclick="usuario('1');" id="papel" >-->
+        <div onclick="usuario('1');" id="papel" class="mensajeresu">
+            <img src="./assets/img/papel.jpg">
+        </div>
+        <!-- <div class="elegir" onclick="usuario('2');" id="tijera" >-->
+        <div onclick="usuario('2');" id="tijera" class="mensajeresu">
+            <img src="./assets/img/tijera.jpg">
+        </div>
+    </div>
+    <div id="efecto" style="display:none" onclick="quitarEfecto();"></div>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
